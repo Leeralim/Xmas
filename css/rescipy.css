@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+.section {
+    padding: 90px 0px;
+}
+
+body {
+    background: url('../assets/img/blue-snow.png');
+    font-family: 'Franklin Gothic Medium',
+        'Arial Narrow',
+        Arial,
+        sans-serif;
+    font-size: 20px;
+    color: #333333;
+}
+
+.section-table {
+    align-items: center;
+}
+
+.table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+}
+
+.table-title {
+    font-size: 20px;
+}
+
+.table__item {
+    background: #7d7fa8;
+    padding: 10px 20px;
+}
+
+th {
+    background: #4950ad;
+    color: white;
+    padding: 10px 20px;
+}
+
+th,
+td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: black;
+}
+
+tr:nth-child(even) {
+    background: #c987ab;
+}
+
+th:first-child,
+td:first-child {
+    text-align: left;
+}
+
+.table__title {
+    text-align: center;
+    font-size: 60px;
+}
