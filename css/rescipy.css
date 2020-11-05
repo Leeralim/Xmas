@@ -12,7 +12,8 @@
 }
 
 body {
-    background: url('../assets/img/blue-snow.png');
+    background-color: #E5E5F7;
+    background: repeating-linear-gradient(45deg, #eed5c1, #e7c3b2 10px, #ffffff 10px, #f7f7fa 50px);
     font-family: 'Franklin Gothic Medium',
         'Arial Narrow',
         Arial,
@@ -21,50 +22,507 @@ body {
     color: #333333;
 }
 
-.section-table {
+.rescipy {
+    padding: 0;
+}
+
+.rescipy-category {
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.baker {
+    height: 64px;
+}
+
+.navbar {
+    background-color: #fff;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar-wrapper {
+    max-width: 1200px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.table {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+.navbar-menu__items {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-menu__link {
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 17px;
+    padding: 10px;
+    display: inline-block;
+    color: #333333;
+}
+
+.navbar-menu__link:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.navbar-menu__link:after {
+    content: "";
+    background-color: black;
+    display: block;
+    height: 2px;
+    width: 0%;
+    transition: width .3s ease-in-out;
+}
+
+.navbar-menu__link:hover:after,
+.navbar-menu__link:focus:after {
+    width: 100%;
+}
+
+.navbar-menu {
+    margin-left: 60px;
+    margin-right: auto;
+}
+
+.input-group {
+    width: 237px;
+    height: 32px;
+    position: relative;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #D9D9D9;
+}
+
+.search-input {
+    border: none;
+    height: 100%;
+    width: 80%;
     font-size: 14px;
-    border-collapse: collapse;
+    line-height: 22px;
+    padding-left: 12px;
+}
+
+.search-button {
+    background-color: #fff;
+    cursor: pointer;
+    height: 100%;
+    width: 20%;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-input::-moz-placeholder {
+    color: #BFBFBF;
+    /* Цвет подсказывающего текста */
+}
+
+.search-input::-webkit-input-placeholder {
+    color: #BFBFBF;
+}
+
+.search-input:-ms-input-placeholder {
+    color: #BFBFBF;
+}
+
+.search-input::-ms-input-placeholder {
+    color: #BFBFBF;
+}
+
+.search-input::placeholder {
+    color: #BFBFBF;
+}
+
+.cooking-method {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    position: relative;
+}
+
+.title_medium {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 30px;
+}
+
+.pie {
+    width: 100%;
+    position: relative;
+}
+
+.description-text {
+    text-align: center;
+    font-weight: 200;
+}
+
+.description {
+    padding-bottom: 15px;
+}
+
+.ingredients {
+    text-align: center;
+    font-weight: normal;
+}
+
+.ingredient-items {
+    text-align: left;
+    font-weight: 200;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dough,
+.filling,
+.lubrication {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px,
+        rgba(0, 0, 0, 0.07) 0px 2px 2px,
+        rgba(0, 0, 0, 0.07) 0px 4px 4px,
+        rgba(0, 0, 0, 0.07) 0px 8px 8px,
+        rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    padding: 0 15px 0 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.dough {
+    background-color: #FAC1A5;
+}
+
+.lubrication {
+    background-color: #BEADED;
+}
+
+.filling {
+    background-color: #C0FFEE;
+}
+
+.cooking-title {
+    text-align: center;
+}
+
+.flour {
+    width: 95%;
+    margin: auto;
+    border-radius: 5%;
+}
+
+.step-photo {
     text-align: center;
     margin: auto;
 }
 
-.table-title {
-    font-size: 20px;
-}
-
-.table__item {
-    background: #7d7fa8;
-    padding: 10px 20px;
-}
-
-th {
-    background: #4950ad;
-    color: white;
-    padding: 10px 20px;
-}
-
-th,
-td {
-    border-style: solid;
-    border-width: 0 1px 1px 0;
-    border-color: black;
-}
-
-tr:nth-child(even) {
-    background: #c987ab;
-}
-
-th:first-child,
-td:first-child {
-    text-align: left;
-}
-
-.table__title {
+.step-number {
     text-align: center;
-    font-size: 60px;
+    font-size: 35px;
+    background-color: #f1bcaa9a;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+        rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border-radius: 15px;
+}
+
+.step {
+    text-align: center;
+    font-size: 22px;
+}
+
+.cooking-algoritm {
+    padding-bottom: 25px;
+    margin-bottom: 40px;
+}
+
+footer {
+    margin-top: 5px;
+    background-color: #fff;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.footer-navbar__wrapper {
+    max-width: 1200px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.info__networks {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-navbar-info__item {
+    margin-right: 15px;
+}
+
+.footer-navbar__info {
+    display: inline-block;
+    transform-origin: center center
+}
+
+.shake-freeze,
+.shake-constant.shake-constant--hover:hover,
+.shake-trigger:hover .shake-constant.shake-constant--hover {
+    animation-play-state: paused
+}
+
+.shake-freeze:hover,
+.shake-trigger:hover .shake-freeze,
+.shake-little:hover,
+.shake-trigger:hover .shake-little {
+    animation-play-state: running
+}
+
+@keyframes shake-little {
+    2% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+
+    4% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+
+    6% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+
+    8% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+
+    10% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+
+    12% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+
+    14% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+
+    16% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+
+    18% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+
+    20% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+
+    22% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+
+    24% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+
+    26% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+
+    28% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+
+    30% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+
+    32% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+
+    34% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+
+    36% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+
+    38% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+
+    40% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+
+    42% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+
+    44% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+
+    46% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+
+    48% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+
+    50% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+
+    52% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+
+    54% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+
+    56% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+
+    58% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+
+    60% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+
+    62% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+
+    64% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+
+    66% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+
+    68% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+
+    70% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+
+    72% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+
+    74% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+
+    76% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+
+    78% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+
+    80% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+
+    82% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+
+    84% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+
+    86% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+
+    88% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+
+    90% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+
+    92% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+
+    94% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+
+    96% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+
+    98% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0)
+    }
+}
+
+.shake-little:hover,
+.shake-trigger:hover .shake-little,
+.shake-little.shake-freeze,
+.shake-little.shake-constant {
+    animation: shake-little 100ms ease-in-out infinite
+}
+
+.footer-navbar__link {
+    cursor: pointer;
+    color: black;
+}
+
+.mail {
+    margin-right: 33%;
+    text-decoration: none;
+    color: #262626;
+    font-size: 15px;
+}
+
+.author-name {
+    font-size: 15px;
+}
+
+.return-back {
+    margin-left: 15px;
 }

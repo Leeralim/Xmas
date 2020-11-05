@@ -5,119 +5,240 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/rescipy.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <title>Рецепт пирога</title>
 </head>
 
 <body>
-
-
-    <section class="section table">
+    <nav class="navbar">
         <div class="container">
-            <div class="table-block">
-                <h1 class="section-title table__title">Шоколадный новогодний пирог</h1>
-            </div>
-            <div class="section-table table__ingredients">
-                <table class="table rescipy__table">
-                    <caption class="table-title table__name"> <b>Ингредиенты</b> </caption>
-                    <tr>
-                        <th>Продукт</th>
-                        <th>Количество</th>
-                        <th>Белки,гр</th>
-                        <th>Жиры,гр</th>
-                        <th>Углеводы,гр</th>
-                    </tr>
-                    <tr>
-                        <td class="table__item">Сливочное масло</td>
-                        <td> 200 гр </td>
-                        <td> 1.08 </td>
-                        <td> 164.96 </td>
-                        <td> 1.56 </td>
-                    </tr>
-                    <tr>
-                        <td class="table__item">Черный шоколад 70%</td>
-                        <td> 200 гр </td>
-                        <td> 19.24 </td>
-                        <td> 79.50 </td>
-                        <td> 75.68 </td>
-                    </tr>
-                    <tr>
-                        <td class="table__item">Мука пшеничная</td>
-                        <td> 230 гр </td>
-                        <td> 23.34 </td>
-                        <td> 6.21 </td>
-                        <td> 155.53 </td>
-                    </tr>
-                    <tr>
-                        <td class="table__item">Яйцо куриное</td>
-                        <td> 5 штук </td>
-                        <td> 7.46 </td>
-                        <td> 6.45 </td>
-                        <td> 0.65 </td>
-                    </tr>
-                    <tr>
-                        <td class="table__item">Сахар</td>
-                        <td> 1 ст. ложка </td>
-                        <td> 0.28 </td>
-                        <td> 0.25 </td>
-                        <td> 22.03 </td>
-                    </tr>
-                </table>
-            </div>
-    </section>
-
-    <section class="cooking_method section">
-        <div class="container">
-            <div class="cooking_method-block">
-                <div class="cooking_method__algoritm">
-                    <ol class="algoritm">
-                        <li class="rescipy_menu__item">Разогрейте духовку до 190 градусов.</li>
-                        <li class="rescipy_menu__item">Растопите измельченный шоколад и сливочное масло на водяной бане.
-                            Перелейте в миску.</li>
-                        <li class="rescipy_menu__item">В шоколадную массу добавьте сахар и перемешайте деревянной
-                            ложкой. Слегка
-                            охладите.</li>
-                        <li class="rescipy_menu__item">Затем добавьте по одному яйца, хорошо перемешивая после каждого.
+            <div class="navbar-wrapper">
+                <a href="/" class="navbar__logo">
+                    <img src="assets/img/pine-tree.png" alt="logo">
+                </a>
+                <div class="navbar-menu">
+                    <ul class="navbar-menu__items">
+                        <li class="navbar-menu__item">
+                            <a href="decorate.html" class="navbar-menu__link">Декор дома</a>
                         </li>
-                        <li class="rescipy_menu__item">Добавьте муку.</li>
-                        <li class="rescipy_menu__item">Вылейте тесто в прямоугольную, застеленную пергаментом форму и
-                            выпекайте
-                            25-30 минут до готовности, но середина пирога должна оставаться слегка мягкой.</li>
-                        <li class="rescipy_menu__item">Охладите, но будьте осторожны — пока пирог теплый, он очень
-                            нежный и
-                            хрупкий.</li>
-                    </ol>
+                        <li class="navbar-menu__item">
+                            <a href="rescipy.html" class="navbar-menu__link">Рецепт пирога</a>
+                        </li>
+                        <li class="navbar-menu__item">
+                            <a href="#" class="navbar-menu__link">Новогодняя музыка</a>
+                        </li>
+                        <li class="navbar-menu__item">
+                            <a href="#" class="navbar-menu__link">Новогодний стол</a>
+                        </li>
+                        <li class="navbar-menu__item">
+                            <a href="#" class="navbar-menu__link">Огоньки</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="search-input" placeholder="Поиск по сайту">
+                    <button class="search-button">
+                        <img src="assets/img/search.svg" alt="ЛУПА" class="search-item">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section rescipy">
+        <div class="container">
+            <div class="rescipy-category">
+                <h2 class="catgory-name">Выпечка</h2>
+                <img src="assets/img/baker.png" alt="baker" class="baker">
+            </div>
+            <hr>
+            <div class="card cooking-method">
+                <h2 class="title title_medium">Зимний пряный пирог</h2>
+                <div class="plain-text">
+                    <div class="description">
+                        <p class="description-text">Ароматный медово-пряный пирог для семейного чаепития! Зимняя выпечка
+                            - особенная, она
+                            наполнена
+                            ароматами пряностей,
+                            меда и цитрусовых. Дополнительный аромат этому пирогу придают ягоды брусники и красное вино.
+                            Кусочек такого пирога с
+                            чашечкой ароматного горячего чая согреет Вас в холодный зимний вечер.
+                        </p>
+                    </div>
+                    <div class="content-media">
+                        <img src="assets/img/ny_pie.jpg" alt="Новогоднии пряныи пирожочек" class="pie">
+                    </div>
+                </div>
+                <div class="ingredients">
+                    <p>Порция рассчитнана на 10 порций (кусков)</p>
+                    <p>
+                    <h2>Ингредиенты:</h2>
+                    </p>
+                    <div class="ingredient-items">
+                        <div class="dough">
+                            <p>Для теста:</p>
+                            <ul>
+                                <li>Мука - 450гр. (3.5 стакана)</li>
+                                <li>Яйца куриные - 1 штука</li>
+                                <li>Сухие дрожжи - 10гр. (0.5 ст. ложки)</li>
+                                <li>Молоко - 250мл. (1.3 стакана)</li>
+                                <li>Соль - 1 чайн. ложка</li>
+                                <li>Сахар - 2 чайн. ложки</li>
+                                <li>Растительное масло - 3 ст. ложки</li>
+                            </ul>
+                        </div>
+                        <div class="filling">
+                            <p>Для начинки:</p>
+                            <ul>
+                                <li>Брусника - 300гр. (2.1 стакана)</li>
+                                <li>Апельсин - 1 штука</li>
+                                <li>Вино красное - 100мл. (0.5 стакана)</li>
+                                <li>Мед - 3ст. ложки</li>
+                                <li>Яблоки - 3 штуки</li>
+                                <li>Сливочное масло - 25гр. (1.3 ст. ложки)</li>
+                                <li>Сахар - 50гр. (2.5 ст. ложки)</li>
+                                <li>Корица - 5гр. (1 чайн. ложка)</li>
+                                <li>Джем(вишневый) - 150гр. (7.5 ст. ложки)</li>
+                            </ul>
+                        </div>
+                        <div class="lubrication">
+                            <p>Для смазывания:</p>
+                            <ul>
+                                <li>Яйцо - 1 штука</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cooking-algoritm">
+                    <h2 class="cooking-title">Пошаговое приготовление:</h2>
+                    <div class="cooking-steps">
+                        <h4 class="step-number">Шаг 1:</h4>
+                        <div class="step">
+                            <p class="step-photo">
+                                <img src="assets/img/flour.jpg" alt="" class="flour">
+                            </p>
+                            <p>В чуть теплое молоко (30℃) вбиваем яйцо и аккуратно перемешиваем венчиком, не взбивая
+                                массу. Затем всыпаем сахар и
+                                дрожжи и перемешиваем до тех пор, пока они не растворятся. Вливаем растительное масло и
+                                снова перемешиваем венчиком.
+                                Начинаем вводить просеянную через сито муку с солью. Перемешивая тесто сначала
+                                деревянной ложкой, а затем вымешивая его
+                                руками. Тесто должно быть немного липким. Накрываем тесто полотенцем и ставим его в
+                                теплое место на 1 час.</p>
+                        </div>
+                        <h4 class="step-number">Шаг 2:</h4>
+                        <div class="step">
+                            <p class="step-photo">
+                                <img src="assets/img/apples.jpg" alt="" class="flour">
+                            </p>
+                            <p>Яблоки моем, обсушиваем и нарезаем небольшими кубиками. Перекладываем их в сотейник.
+                                Нарезанные яблоки слегка обжариваем
+                                на сливочном масле. Затем всыпаем сахар и корицу, перемешиваем и продолжаем обжаривать
+                                пока, сахар не начнет
+                                карамелизоваться.</p>
+                        </div>
+                        <h4 class="step-number">Шаг 3:</h4>
+                        <div class="step">
+                            <p class="step-photo">
+                                <img src="assets/img/fill.jpg" alt="" class="flour">
+                            </p>
+                            <p>На очень мелкой терке натираем цедру всего апельсина, из мякоти выжимаем сок, используя
+                                ручную соковыжималку. Бруснику
+                                (250 гр.) промываем под водой и перекладываем в сотейник, добавляем мед, цедру и сок
+                                апельсина. Ставим сотейник на
+                                огонь, перемешиваем все ингредиенты и готовим соус в течение 10 минут. После чего
+                                половину соуса измельчаем в бленедере
+                                и снова перекладываем в сотейник, варим соус еще 15 минут. Горячий соус перекладываем к
+                                яблокам.</p>
+                        </div>
+                        <h4 class="step-number">Шаг 4:</h4>
+                        <div class="step">
+                            <p class="step-photo">
+                                <img src="assets/img/jem.jpg" alt="" class="flour">
+                            </p>
+                            <p>В этот же сотейник добавляем вишневый джем. Желательно, чтобы джем был с цельными
+                                ягодами. Перемешиваем содержимое
+                                сотейника. Начинка для пирога готова.</p>
+                        </div>
+                        <h4 class="step-number">Шаг 5:</h4>
+                        <div class="step">
+                            <p class="step-photo">
+                                <img src="assets/img/grow.jpg" alt="" class="flour">
+                            </p>
+                            <p>За это время тесто должно было подняться как минимум в 2 раза. Присыпаем немного мукой и
+                                обминаем тесто, чтобы вышли
+                                излишки углекислого газа.</p>
+                        </div>
+                        <h4 class="step-number">Шаг 6:</h4>
+                        <div class="step">
+                            <p class="step-photo">
+                                <img src="assets/img/cut.jpg" alt="" class="flour">
+                            </p>
+                            <p>Отрезаем большую часть теста, оставив немного теста для выполнения сеточки на пироге. Из
+                                большой части раскатываем
+                                большой круг и перекладываем его на смазанную растительным маслом круглую форму для
+                                выпекания. Формируем дно и бортики
+                                будущего пирога.</p>
+                        </div>
+                        <h4 class="step-number">Шаг 7:</h4>
+                        <div class="step">
+                            <p class="step-photo">
+                                <img src="assets/img/make.jpg" alt="" class="flour">
+                            </p>
+                            <p>Выкладываем начинку и равномерно распределяем ее по всему пирогу, сверху посыпаем
+                                оставшимися ягодами брусники (50 гр.).</p>
+                        </div>
+                        <h4 class="step-number">Шаг 8:</h4>
+                        <div class="step">
+                            <p class="step-photo">
+                                <img src="assets/img/bake.jpg" alt="" class="flour">
+                            </p>
+                            <p>Из оставшегося теста раскатываем небольшой пласт и нарезаем его узенькими полосочками.
+                                Эти полосочки выкладываем на
+                                пирог, создавая сеточку. Аккуратно заворачиваем боковинки пирога. Смазываем сеточку и
+                                бортик пирога взбитым яйцом.
+                                Выпекаем пирог в разогретой до 180℃ духовке 25-30 минут.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <img src="assets/img/pie.jpg" alt="Шоколадный пирог">
-
-    <!-- Таблица с ингредиентами-->
-    <div class="hero__rescipy">
-
-
-        <!--Алгоритм приготовления-->
-        <h2>Алгоритм приготовления</h2>
-        <div class="hero__rescipy_algoritm">
-            <ol class="rescipy_menu">
-                <li class="rescipy_menu__item">Разогрейте духовку до 190 градусов.</li>
-                <li class="rescipy_menu__item">Растопите измельченный шоколад и сливочное масло на водяной бане.
-                    Перелейте в миску.</li>
-                <li class="rescipy_menu__item">В шоколадную массу добавьте сахар и перемешайте деревянной ложкой. Слегка
-                    охладите.</li>
-                <li class="rescipy_menu__item">Затем добавьте по одному яйца, хорошо перемешивая после каждого.</li>
-                <li class="rescipy_menu__item">Добавьте муку.</li>
-                <li class="rescipy_menu__item">Вылейте тесто в прямоугольную, застеленную пергаментом форму и выпекайте
-                    25-30 минут до готовности, но середина пирога должна оставаться слегка мягкой.</li>
-                <li class="rescipy_menu__item">Охладите, но будьте осторожны — пока пирог теплый, он очень нежный и
-                    хрупкий.</li>
-            </ol>
-        </div>
-        <a href="index.html" class="go_back">
-            <button class="btn_back">Назад</button>
-        </a>
-    </div>
-
+    <a href="index.html" class="return-back">
+        <img src="assets/img/left-arrow.png" alt="">
+    </a>
 </body>
+
+<footer>
+    <nav class="footer-navbar">
+        <div class="container">
+            <div class="footer-navbar__wrapper">
+                <a href="/" class="navbar__logo">
+                    <img src="assets/img/lynx.png" alt="logo">
+                </a>
+                <a href="mailto:leeralim@yandex.ru" class="mail">leeralim@yandex.ru</a>
+                <span class="author-name">Лимар Валерия Альбертовна</span>
+                <div class="shake-little shake-constant shake-constant--hover">
+                    <ul class="footer-navbar info__networks">
+                        <li class="footer-navbar-info__item">
+                            <a href="https://vk.com/leeralim" class="footer-navbar__link">
+                                <img src="assets/img/vk.png" alt="">
+                            </a>
+                        </li>
+                        <li class="footer-navbar-info__item">
+                            <a href="https://t.me/Leeralim" class="footer-navbar__link">
+                                <img src="assets/img/telegram.png" alt="">
+                            </a>
+                        </li>
+                        <li class="footer-navbar-info__item">
+                            <a href="https://github.com/Leeralim" class="footer-navbar__link">
+                                <img src="assets/img/github.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</footer>
 
 </html>
